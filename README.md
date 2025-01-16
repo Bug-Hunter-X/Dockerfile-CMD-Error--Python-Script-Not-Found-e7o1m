@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles: attempting to execute a script that isn't included in the image. The original Dockerfile attempts to run a Python script, but the script isn't copied into the image, causing the container to fail. The solution involves adding a COPY instruction to include the script in the image.
